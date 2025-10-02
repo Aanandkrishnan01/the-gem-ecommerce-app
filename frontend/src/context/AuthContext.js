@@ -1,6 +1,9 @@
 import React, { createContext, useContext, useReducer, useEffect } from 'react';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+// Use relative URLs for combined deployment (same domain for frontend and backend)
+const API_BASE_URL = process.env.NODE_ENV === 'production' 
+  ? '/api'  // Relative URL for production (same domain)
+  : 'http://localhost:5000/api';  // Localhost for development
 
 const AuthContext = createContext();
 

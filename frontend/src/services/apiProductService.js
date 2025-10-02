@@ -1,6 +1,11 @@
 // API service for connecting to the backend database
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
-const BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
+// Use relative URLs for combined deployment (same domain for frontend and backend)
+const API_BASE_URL = process.env.NODE_ENV === 'production' 
+  ? '/api'  // Relative URL for production (same domain)
+  : 'http://localhost:5000/api';  // Localhost for development
+const BASE_URL = process.env.NODE_ENV === 'production' 
+  ? ''  // Same domain for production
+  : 'http://localhost:5000';  // Localhost for development
 
 class ApiProductService {
   // Available images mapping for fallback
