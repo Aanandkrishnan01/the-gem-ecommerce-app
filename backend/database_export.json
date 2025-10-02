@@ -1,0 +1,642 @@
+{
+  "products": [
+    {
+      "_id": "68d8ddad7a9b5192e4598e32",
+      "name": "Classic White Shirt",
+      "description": "A timeless white button-down shirt made from premium cotton. Perfect for both professional and casual settings.",
+      "price": 89,
+      "originalPrice": 120,
+      "category": "clothes",
+      "subcategory": "shirts",
+      "tags": [
+        "new",
+        "formal",
+        "cotton"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stock": 10,
+          "_id": "68d8ddad7a9b5192e4598e33"
+        },
+        {
+          "size": "S",
+          "stock": 15,
+          "_id": "68d8ddad7a9b5192e4598e34"
+        },
+        {
+          "size": "M",
+          "stock": 20,
+          "_id": "68d8ddad7a9b5192e4598e35"
+        },
+        {
+          "size": "L",
+          "stock": 15,
+          "_id": "68d8ddad7a9b5192e4598e36"
+        },
+        {
+          "size": "XL",
+          "stock": 10,
+          "_id": "68d8ddad7a9b5192e4598e37"
+        }
+      ],
+      "colors": [
+        "White",
+        "Light Blue",
+        "Pink"
+      ],
+      "images": [
+        {
+          "url": "/images/white-shirt-1.jpg",
+          "alt": "Classic White Shirt Front",
+          "isPrimary": true,
+          "_id": "68d8ddad7a9b5192e4598e38"
+        },
+        {
+          "url": "/images/white-shirt-2.jpg",
+          "alt": "Classic White Shirt Back",
+          "isPrimary": false,
+          "_id": "68d8ddad7a9b5192e4598e39"
+        }
+      ],
+      "stock": 70,
+      "features": [
+        "100% Premium Cotton",
+        "Machine Washable",
+        "Wrinkle Resistant",
+        "Classic Fit"
+      ],
+      "specifications": {
+        "material": "100% Cotton",
+        "care": "Machine wash cold, hang dry",
+        "origin": "Made in USA"
+      },
+      "rating": {
+        "average": 4.5,
+        "count": 128
+      },
+      "reviews": [],
+      "isActive": true,
+      "isFeatured": true,
+      "salesCount": 0,
+      "__v": 0,
+      "createdAt": "2025-09-28T07:03:10.017Z",
+      "updatedAt": "2025-09-28T07:03:10.017Z"
+    },
+    {
+      "_id": "68d8ddad7a9b5192e4598e3a",
+      "name": "Premium Leather Boots",
+      "description": "Handcrafted leather boots made from genuine Italian leather. Durable and stylish for any season.",
+      "price": 299,
+      "originalPrice": 399,
+      "category": "shoes",
+      "subcategory": "boots",
+      "tags": [
+        "premium",
+        "leather",
+        "winter"
+      ],
+      "sizes": [
+        {
+          "size": "38",
+          "stock": 5,
+          "_id": "68d8ddad7a9b5192e4598e3b"
+        },
+        {
+          "size": "39",
+          "stock": 8,
+          "_id": "68d8ddad7a9b5192e4598e3c"
+        },
+        {
+          "size": "40",
+          "stock": 12,
+          "_id": "68d8ddad7a9b5192e4598e3d"
+        },
+        {
+          "size": "41",
+          "stock": 10,
+          "_id": "68d8ddad7a9b5192e4598e3e"
+        },
+        {
+          "size": "42",
+          "stock": 8,
+          "_id": "68d8ddad7a9b5192e4598e3f"
+        },
+        {
+          "size": "43",
+          "stock": 5,
+          "_id": "68d8ddad7a9b5192e4598e40"
+        }
+      ],
+      "colors": [
+        "Black",
+        "Brown",
+        "Tan"
+      ],
+      "images": [
+        {
+          "url": "/images/leather-boots-1.jpg",
+          "alt": "Premium Leather Boots",
+          "isPrimary": true,
+          "_id": "68d8ddae7a9b5192e4598e41"
+        },
+        {
+          "url": "/images/leather-boots-2.jpg",
+          "alt": "Leather Boots Detail",
+          "isPrimary": false,
+          "_id": "68d8ddae7a9b5192e4598e42"
+        }
+      ],
+      "stock": 48,
+      "features": [
+        "Genuine Italian Leather",
+        "Waterproof",
+        "Non-slip Sole",
+        "Comfortable Fit"
+      ],
+      "specifications": {
+        "material": "Genuine Leather",
+        "care": "Clean with leather cleaner",
+        "origin": "Made in Italy"
+      },
+      "rating": {
+        "average": 4.8,
+        "count": 95
+      },
+      "reviews": [],
+      "isActive": true,
+      "isFeatured": true,
+      "salesCount": 0,
+      "__v": 0,
+      "createdAt": "2025-09-28T07:03:10.017Z",
+      "updatedAt": "2025-09-28T07:03:10.017Z"
+    },
+    {
+      "_id": "68d8ddae7a9b5192e4598e43",
+      "name": "Designer Handbag",
+      "description": "Elegant designer handbag with premium hardware and spacious interior. Perfect for everyday use or special occasions.",
+      "price": 450,
+      "category": "accessories",
+      "subcategory": "bags",
+      "tags": [
+        "luxury",
+        "designer",
+        "new"
+      ],
+      "sizes": [
+        {
+          "size": "One Size",
+          "stock": 25,
+          "_id": "68d8ddae7a9b5192e4598e44"
+        }
+      ],
+      "colors": [
+        "Black",
+        "Brown",
+        "Navy",
+        "Red"
+      ],
+      "images": [
+        {
+          "url": "/images/designer-handbag-1.jpg",
+          "alt": "Designer Handbag",
+          "isPrimary": true,
+          "_id": "68d8ddae7a9b5192e4598e45"
+        },
+        {
+          "url": "/images/designer-handbag-2.jpg",
+          "alt": "Handbag Interior",
+          "isPrimary": false,
+          "_id": "68d8ddae7a9b5192e4598e46"
+        }
+      ],
+      "stock": 25,
+      "features": [
+        "Premium Hardware",
+        "Multiple Compartments",
+        "Adjustable Strap",
+        "Dust Bag Included"
+      ],
+      "specifications": {
+        "material": "Saffiano Leather",
+        "care": "Wipe clean with soft cloth",
+        "origin": "Made in France"
+      },
+      "rating": {
+        "average": 4.7,
+        "count": 67
+      },
+      "reviews": [],
+      "isActive": true,
+      "isFeatured": true,
+      "salesCount": 0,
+      "__v": 0,
+      "createdAt": "2025-09-28T07:03:10.019Z",
+      "updatedAt": "2025-09-28T07:03:10.019Z"
+    },
+    {
+      "_id": "68d8ddae7a9b5192e4598e47",
+      "name": "Casual Denim Jeans",
+      "description": "Comfortable straight-fit denim jeans made from high-quality cotton blend. Perfect for casual everyday wear.",
+      "price": 79,
+      "originalPrice": 99,
+      "category": "clothes",
+      "subcategory": "jeans",
+      "tags": [
+        "casual",
+        "denim",
+        "sale"
+      ],
+      "sizes": [
+        {
+          "size": "28",
+          "stock": 8,
+          "_id": "68d8ddae7a9b5192e4598e48"
+        },
+        {
+          "size": "30",
+          "stock": 15,
+          "_id": "68d8ddae7a9b5192e4598e49"
+        },
+        {
+          "size": "32",
+          "stock": 20,
+          "_id": "68d8ddae7a9b5192e4598e4a"
+        },
+        {
+          "size": "34",
+          "stock": 18,
+          "_id": "68d8ddae7a9b5192e4598e4b"
+        },
+        {
+          "size": "36",
+          "stock": 12,
+          "_id": "68d8ddae7a9b5192e4598e4c"
+        },
+        {
+          "size": "38",
+          "stock": 7,
+          "_id": "68d8ddae7a9b5192e4598e4d"
+        }
+      ],
+      "colors": [
+        "Dark Blue",
+        "Light Blue",
+        "Black"
+      ],
+      "images": [
+        {
+          "url": "/images/denim-jeans-1.jpg",
+          "alt": "Casual Denim Jeans",
+          "isPrimary": true,
+          "_id": "68d8ddae7a9b5192e4598e4e"
+        },
+        {
+          "url": "/images/denim-jeans-2.jpg",
+          "alt": "Jeans Back View",
+          "isPrimary": false,
+          "_id": "68d8ddae7a9b5192e4598e4f"
+        }
+      ],
+      "stock": 80,
+      "features": [
+        "Cotton Blend",
+        "Five Pocket Style",
+        "Belt Loops",
+        "Straight Fit"
+      ],
+      "specifications": {
+        "material": "98% Cotton, 2% Elastane",
+        "care": "Machine wash cold, tumble dry low",
+        "origin": "Made in Turkey"
+      },
+      "rating": {
+        "average": 4.3,
+        "count": 203
+      },
+      "reviews": [],
+      "isActive": true,
+      "isFeatured": false,
+      "salesCount": 0,
+      "__v": 0,
+      "createdAt": "2025-09-28T07:03:10.019Z",
+      "updatedAt": "2025-09-28T07:03:10.019Z"
+    },
+    {
+      "_id": "68d8ddae7a9b5192e4598e50",
+      "name": "Running Sneakers",
+      "description": "High-performance running sneakers with advanced cushioning and breathable mesh upper. Ideal for sports and casual wear.",
+      "price": 120,
+      "category": "shoes",
+      "subcategory": "sneakers",
+      "tags": [
+        "sport",
+        "running",
+        "comfortable"
+      ],
+      "sizes": [
+        {
+          "size": "38",
+          "stock": 6,
+          "_id": "68d8ddae7a9b5192e4598e51"
+        },
+        {
+          "size": "39",
+          "stock": 10,
+          "_id": "68d8ddae7a9b5192e4598e52"
+        },
+        {
+          "size": "40",
+          "stock": 15,
+          "_id": "68d8ddae7a9b5192e4598e53"
+        },
+        {
+          "size": "41",
+          "stock": 12,
+          "_id": "68d8ddae7a9b5192e4598e54"
+        },
+        {
+          "size": "42",
+          "stock": 10,
+          "_id": "68d8ddae7a9b5192e4598e55"
+        },
+        {
+          "size": "43",
+          "stock": 7,
+          "_id": "68d8ddae7a9b5192e4598e56"
+        }
+      ],
+      "colors": [
+        "White",
+        "Black",
+        "Gray",
+        "Blue"
+      ],
+      "images": [
+        {
+          "url": "/images/running-sneakers-1.jpg",
+          "alt": "Running Sneakers",
+          "isPrimary": true,
+          "_id": "68d8ddae7a9b5192e4598e57"
+        },
+        {
+          "url": "/images/running-sneakers-2.jpg",
+          "alt": "Sneakers Side View",
+          "isPrimary": false,
+          "_id": "68d8ddae7a9b5192e4598e58"
+        }
+      ],
+      "stock": 60,
+      "features": [
+        "Breathable Mesh",
+        "Cushioned Sole",
+        "Lightweight",
+        "Non-marking Outsole"
+      ],
+      "specifications": {
+        "material": "Mesh and Synthetic",
+        "care": "Wipe clean with damp cloth",
+        "origin": "Made in Vietnam"
+      },
+      "rating": {
+        "average": 4.6,
+        "count": 145
+      },
+      "reviews": [],
+      "isActive": true,
+      "isFeatured": false,
+      "salesCount": 0,
+      "__v": 0,
+      "createdAt": "2025-09-28T07:03:10.019Z",
+      "updatedAt": "2025-09-28T07:03:10.019Z"
+    },
+    {
+      "_id": "68d8ddae7a9b5192e4598e59",
+      "name": "Silk Scarf",
+      "description": "Luxurious silk scarf with beautiful patterns. A perfect accessory to elevate any outfit.",
+      "price": 65,
+      "originalPrice": 85,
+      "category": "accessories",
+      "subcategory": "scarves",
+      "tags": [
+        "silk",
+        "luxury",
+        "sale"
+      ],
+      "sizes": [
+        {
+          "size": "One Size",
+          "stock": 30,
+          "_id": "68d8ddae7a9b5192e4598e5a"
+        }
+      ],
+      "colors": [
+        "Floral Blue",
+        "Geometric Black",
+        "Abstract Red",
+        "Classic Navy"
+      ],
+      "images": [
+        {
+          "url": "/images/silk-scarf-1.jpg",
+          "alt": "Silk Scarf",
+          "isPrimary": true,
+          "_id": "68d8ddae7a9b5192e4598e5b"
+        },
+        {
+          "url": "/images/silk-scarf-2.jpg",
+          "alt": "Scarf Detail",
+          "isPrimary": false,
+          "_id": "68d8ddae7a9b5192e4598e5c"
+        }
+      ],
+      "stock": 30,
+      "features": [
+        "100% Silk",
+        "Hand-rolled Edges",
+        "Lightweight",
+        "Versatile Styling"
+      ],
+      "specifications": {
+        "material": "100% Mulberry Silk",
+        "care": "Dry clean only",
+        "origin": "Made in Italy"
+      },
+      "rating": {
+        "average": 4.4,
+        "count": 89
+      },
+      "reviews": [],
+      "isActive": true,
+      "isFeatured": false,
+      "salesCount": 0,
+      "__v": 0,
+      "createdAt": "2025-09-28T07:03:10.020Z",
+      "updatedAt": "2025-09-28T07:03:10.020Z"
+    },
+    {
+      "_id": "68d8ddae7a9b5192e4598e5d",
+      "name": "Evening Dress",
+      "description": "Elegant evening dress perfect for special occasions. Features a flattering silhouette and premium fabric.",
+      "price": 199,
+      "category": "clothes",
+      "subcategory": "dresses",
+      "tags": [
+        "formal",
+        "evening",
+        "new"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stock": 3,
+          "_id": "68d8ddae7a9b5192e4598e5e"
+        },
+        {
+          "size": "S",
+          "stock": 8,
+          "_id": "68d8ddae7a9b5192e4598e5f"
+        },
+        {
+          "size": "M",
+          "stock": 10,
+          "_id": "68d8ddae7a9b5192e4598e60"
+        },
+        {
+          "size": "L",
+          "stock": 8,
+          "_id": "68d8ddae7a9b5192e4598e61"
+        },
+        {
+          "size": "XL",
+          "stock": 5,
+          "_id": "68d8ddae7a9b5192e4598e62"
+        }
+      ],
+      "colors": [
+        "Black",
+        "Navy",
+        "Burgundy"
+      ],
+      "images": [
+        {
+          "url": "/images/evening-dress-1.jpg",
+          "alt": "Evening Dress",
+          "isPrimary": true,
+          "_id": "68d8ddae7a9b5192e4598e63"
+        },
+        {
+          "url": "/images/evening-dress-2.jpg",
+          "alt": "Dress Back View",
+          "isPrimary": false,
+          "_id": "68d8ddae7a9b5192e4598e64"
+        }
+      ],
+      "stock": 34,
+      "features": [
+        "Premium Fabric",
+        "Flattering Fit",
+        "Hidden Zipper",
+        "Lined"
+      ],
+      "specifications": {
+        "material": "95% Polyester, 5% Elastane",
+        "care": "Dry clean only",
+        "origin": "Made in Spain"
+      },
+      "rating": {
+        "average": 4.9,
+        "count": 42
+      },
+      "reviews": [],
+      "isActive": true,
+      "isFeatured": true,
+      "salesCount": 0,
+      "__v": 0,
+      "createdAt": "2025-09-28T07:03:10.020Z",
+      "updatedAt": "2025-09-28T07:03:10.020Z"
+    },
+    {
+      "_id": "68d8ddae7a9b5192e4598e65",
+      "name": "Luxury Watch",
+      "description": "Premium timepiece with Swiss movement and sapphire crystal. A perfect blend of elegance and functionality.",
+      "price": 899,
+      "category": "accessories",
+      "subcategory": "watches",
+      "tags": [
+        "luxury",
+        "swiss",
+        "premium"
+      ],
+      "sizes": [
+        {
+          "size": "One Size",
+          "stock": 12,
+          "_id": "68d8ddae7a9b5192e4598e66"
+        }
+      ],
+      "colors": [
+        "Silver",
+        "Gold",
+        "Black"
+      ],
+      "images": [
+        {
+          "url": "/images/luxury-watch-1.jpg",
+          "alt": "Luxury Watch",
+          "isPrimary": true,
+          "_id": "68d8ddae7a9b5192e4598e67"
+        },
+        {
+          "url": "/images/luxury-watch-2.jpg",
+          "alt": "Watch Detail",
+          "isPrimary": false,
+          "_id": "68d8ddae7a9b5192e4598e68"
+        }
+      ],
+      "stock": 12,
+      "features": [
+        "Swiss Movement",
+        "Sapphire Crystal",
+        "Water Resistant",
+        "Premium Strap"
+      ],
+      "specifications": {
+        "material": "Stainless Steel",
+        "care": "Professional servicing recommended",
+        "origin": "Made in Switzerland"
+      },
+      "rating": {
+        "average": 4.8,
+        "count": 28
+      },
+      "reviews": [],
+      "isActive": true,
+      "isFeatured": true,
+      "salesCount": 0,
+      "__v": 0,
+      "createdAt": "2025-09-28T07:03:10.020Z",
+      "updatedAt": "2025-09-28T07:03:10.020Z"
+    }
+  ],
+  "users": [
+    {
+      "_id": "68d8ddad7a9b5192e4598e30",
+      "username": "admin",
+      "email": "admin@ecommerce.com",
+      "password": "$2a$10$a2iygnN1x8R7k.ESf8QL5OJvCYLmR7KnATx6owBEQKlwai/YnMdJa",
+      "firstName": "Admin",
+      "lastName": "User",
+      "phone": "+1234567890",
+      "orderHistory": [],
+      "wishlist": [],
+      "isAdmin": true,
+      "isActive": true,
+      "createdAt": "2025-09-28T07:03:09.866Z",
+      "updatedAt": "2025-09-28T07:03:09.866Z",
+      "__v": 0
+    }
+  ],
+  "orders": [],
+  "exportDate": "2025-09-28T07:15:44.144Z"
+}

@@ -1,0 +1,12 @@
+.compare-button-container {
+  position: relative;
+}
+
+.compare-button-container .compare-tooltip {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.compare-button-container:hover .compare-tooltip {
+  opacity: 1;
+}

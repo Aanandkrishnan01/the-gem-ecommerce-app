@@ -1,0 +1,12 @@
+.wishlist-button-container {
+  position: relative;
+}
+
+.wishlist-button-container .wishlist-tooltip {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.wishlist-button-container:hover .wishlist-tooltip {
+  opacity: 1;
+}
