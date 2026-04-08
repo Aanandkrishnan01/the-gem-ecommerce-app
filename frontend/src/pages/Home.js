@@ -62,6 +62,7 @@ const Home = () => {
                             <img 
                           src={product.image} 
                           alt={product.name}
+                          loading="lazy"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             e.target.style.display = 'none';
@@ -136,6 +137,7 @@ const Home = () => {
                 <img 
                   src={category.image} 
                   alt={category.name}
+                  loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition-all duration-300"></div>

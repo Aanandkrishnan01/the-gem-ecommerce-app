@@ -1,23 +1,25 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Products from './pages/Products';
-import ProductDetail from './pages/ProductDetail';
-import Cart from './pages/Cart';
-import Checkout from './pages/Checkout';
-import Auth from './pages/Auth';
-import Profile from './pages/Profile';
-import Wishlist from './pages/Wishlist';
-import AdminDashboard from './pages/AdminDashboard';
-import OrderDetail from './pages/OrderDetail';
-import ComparePage from './pages/ComparePage';
-import ClothesPage from './pages/ClothesPage';
-import ShoesPage from './pages/ShoesPage';
-import WomenPage from './pages/WomenPage';
-import MenPage from './pages/MenPage';
-import KidsPage from './pages/KidsPage';
 import ComparisonBar from './components/ComparisonBar';
+
+// Lazy load pages
+const Home = lazy(() => import('./pages/Home'));
+const Products = lazy(() => import('./pages/Products'));
+const ProductDetail = lazy(() => import('./pages/ProductDetail'));
+const Cart = lazy(() => import('./pages/Cart'));
+const Checkout = lazy(() => import('./pages/Checkout'));
+const Auth = lazy(() => import('./pages/Auth'));
+const Profile = lazy(() => import('./pages/Profile'));
+const Wishlist = lazy(() => import('./pages/Wishlist'));
+const AdminDashboard = lazy(() => import('./pages/AdminDashboard'));
+const OrderDetail = lazy(() => import('./pages/OrderDetail'));
+const ComparePage = lazy(() => import('./pages/ComparePage'));
+const ClothesPage = lazy(() => import('./pages/ClothesPage'));
+const ShoesPage = lazy(() => import('./pages/ShoesPage'));
+const WomenPage = lazy(() => import('./pages/WomenPage'));
+const MenPage = lazy(() => import('./pages/MenPage'));
+const KidsPage = lazy(() => import('./pages/KidsPage'));
 import { CartProvider } from './context/CartContext';
 import { AuthProvider } from './context/AuthContext';
 import { WishlistProvider } from './context/WishlistContext';
@@ -39,26 +41,32 @@ function Layout() {
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
       {!hideNavbar && <Navbar />}
       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/products/:id" element={<ProductDetail />} />
-          <Route path="/compare" element={<ComparePage />} />
-          <Route path="/auth" element={<Auth />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/admin" element={<AdminDashboard />} />
-          <Route path="/wishlist" element={<Wishlist />} />
-          <Route path="/orders/:orderId" element={<OrderDetail />} />
-          <Route path="/login" element={<Auth />} />
-          <Route path="/signin" element={<Auth />} />
-          <Route path="/clothes" element={<ClothesPage />} />
-          <Route path="/shoes" element={<ShoesPage />} />
-          <Route path="/women" element={<WomenPage />} />
-          <Route path="/men" element={<MenPage />} />
-          <Route path="/kids" element={<KidsPage />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/checkout" element={<Checkout />} />
-        </Routes>
+        <Suspense fallback={
+          <div className="flex justify-center items-center h-[50vh]">
+            <div className="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        }>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/products/:id" element={<ProductDetail />} />
+            <Route path="/compare" element={<ComparePage />} />
+            <Route path="/auth" element={<Auth />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/orders/:orderId" element={<OrderDetail />} />
+            <Route path="/login" element={<Auth />} />
+            <Route path="/signin" element={<Auth />} />
+            <Route path="/clothes" element={<ClothesPage />} />
+            <Route path="/shoes" element={<ShoesPage />} />
+            <Route path="/women" element={<WomenPage />} />
+            <Route path="/men" element={<MenPage />} />
+            <Route path="/kids" element={<KidsPage />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+          </Routes>
+        </Suspense>
       </main>
       <ComparisonBar />
     </div>

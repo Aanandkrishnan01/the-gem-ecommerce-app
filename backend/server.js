@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const path = require('path');
+const compression = require('compression');
 
 // Load environment variables
 dotenv.config();
@@ -17,12 +18,15 @@ const cartRoutes = require('./routes/cart');
 const orderRoutes = require('./routes/orders');
 
 // Middleware
+app.use(compression()); // Compress all responses
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static images
-app.use('/images', express.static(path.join(__dirname, '../frontend/public/images')));
+// Serve static images with a 1-day cache
+app.use('/images', express.static(path.join(__dirname, '../frontend/public/images'), {
+  maxAge: '1d'
+}));
 
 // Database connection
 const mongoURI =

@@ -305,6 +305,7 @@ const Products = () => {
                               <img
                                 src={product.image || '/images/placeholder-product.png'}
                                 alt={product.name || 'Product'}
+                                loading="lazy"
                                 className="w-full h-48 sm:h-64 lg:h-80 object-cover group-hover:scale-105 transition-transform duration-300"
                                 onError={(e) => {
                                   e.target.src = '/images/placeholder-product.png';
