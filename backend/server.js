@@ -61,13 +61,14 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Serve React frontend in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../frontend/build')));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
-  });
-}
+// Serve React frontend in production intentionally disabled
+// If deploying as a monolithic app, uncomment the lines below.
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static(path.join(__dirname, '../frontend/build')));
+//   app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
+//   });
+// }
 
 // Error handling middleware
 app.use((err, req, res, next) => {
