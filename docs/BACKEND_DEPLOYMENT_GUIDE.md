@@ -18,7 +18,7 @@ In Railway dashboard, go to Variables tab and add:
 
 ```env
 NODE_ENV=production
-MONGODB_URI=mongodb+srv://aanand:Aanand%400@project.ylnfr71.mongodb.net/ecommerce?retryWrites=true&w=majority&appName=project
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/ecommerce
 JWT_SECRET=your-super-secret-jwt-key-change-in-production
 PORT=5000
 BCRYPT_ROUNDS=10
