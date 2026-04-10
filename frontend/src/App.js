@@ -2,6 +2,16 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ComparisonBar from './components/ComparisonBar';
+import { CartProvider } from './context/CartContext';
+import { AuthProvider } from './context/AuthContext';
+import { WishlistProvider } from './context/WishlistContext';
+import { ReviewsProvider } from './context/ReviewsContext';
+import { OrdersProvider } from './context/OrdersContext';
+import { AdminProvider } from './context/AdminContext';
+import { SearchProvider } from './context/SearchContext';
+import { ComparisonProvider } from './context/ComparisonContext';
+import { MarketingProvider } from './context/MarketingContext';
+import { ThemeProvider } from './components/theme-provider';
 
 // Lazy load pages
 const Home = lazy(() => import('./pages/Home'));
@@ -20,16 +30,6 @@ const ShoesPage = lazy(() => import('./pages/ShoesPage'));
 const WomenPage = lazy(() => import('./pages/WomenPage'));
 const MenPage = lazy(() => import('./pages/MenPage'));
 const KidsPage = lazy(() => import('./pages/KidsPage'));
-import { CartProvider } from './context/CartContext';
-import { AuthProvider } from './context/AuthContext';
-import { WishlistProvider } from './context/WishlistContext';
-import { ReviewsProvider } from './context/ReviewsContext';
-import { OrdersProvider } from './context/OrdersContext';
-import { AdminProvider } from './context/AdminContext';
-import { SearchProvider } from './context/SearchContext';
-import { ComparisonProvider } from './context/ComparisonContext';
-import { MarketingProvider } from './context/MarketingContext';
-import { ThemeProvider } from './components/theme-provider';
 
 // Layout component to conditionally show navbar
 function Layout() {
