@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import localProductService from '../services/localProductService';
-import { useCart } from '../context/CartContext';
+
 import WishlistButton from '../components/WishlistButton';
 import CompareButton from '../components/CompareButton';
 import StarRating from '../components/StarRating';
@@ -14,7 +14,7 @@ import { FadeIn, SlideIn, ScaleIn, StaggerContainer } from '../components/Animat
 const Home = () => {
   const [featuredProducts, setFeaturedProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const { addItem } = useCart();
+
   const { getProductRating } = useReviews();
 
   // Fetch featured products from local service

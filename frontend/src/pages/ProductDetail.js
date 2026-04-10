@@ -8,7 +8,7 @@ import ReviewForm from '../components/ReviewForm';
 import ReviewsList from '../components/ReviewsList';
 import ImageGalleryModal from '../components/ImageGalleryModal';
 import { ProductSkeleton } from '../components/LoadingSkeleton';
-import { FadeIn, SlideIn, ScaleIn } from '../components/Animations';
+import { FadeIn, SlideIn } from '../components/Animations';
 
 const ProductDetail = () => {
   const { id } = useParams();

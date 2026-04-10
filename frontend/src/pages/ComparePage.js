@@ -6,7 +6,7 @@ import { useReviews } from '../context/ReviewsContext';
 import StarRating from '../components/StarRating';
 
 const ComparePage = () => {
-  const { items, removeFromComparison, clearComparison, getComparisonCount, reorderComparison } = useComparison();
+  const { items, removeFromComparison, clearComparison, getComparisonCount } = useComparison();
   const { addItem } = useCart();
   const { getProductRating } = useReviews();
   const navigate = useNavigate();
@@ -63,38 +63,7 @@ const ComparePage = () => {
     }
   };
 
-  // Get all unique attributes for comparison
-  const getComparisonAttributes = () => {
-    const attributes = {
-      basic: ['name', 'price', 'originalPrice', 'category', 'brand'],
-      features: ['colors', 'sizes', 'rating', 'tags'],
-      specs: ['material', 'weight', 'dimensions', 'warranty']
-    };
-    return attributes;
-  };
 
-  const attributes = getComparisonAttributes();
-
-  const formatValue = (value, key) => {
-    if (value === null || value === undefined) return '-';
-    
-    switch (key) {
-      case 'price':
-      case 'originalPrice':
-        return `$${value}`;
-      case 'colors':
-      case 'sizes':
-      case 'tags':
-        return Array.isArray(value) ? value.join(', ') : value;
-      case 'rating':
-        if (typeof value === 'object' && value.average) {
-          return `${value.average}/5 (${value.count || 0} reviews)`;
-        }
-        return value;
-      default:
-        return value;
-    }
-  };
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
